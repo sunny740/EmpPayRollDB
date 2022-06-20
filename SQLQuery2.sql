@@ -43,3 +43,16 @@ select SatrtDate from EmpPayRoll WHERE (SatrtDate BETWEEN '2019-04-22' AND GETDA
  --Insert Into EmpPayRoll(Name, Salary, SatrtDate,Gender) values('Ambika',23500, 2018-01-03);
 
 Alter table EmpPayRoll Add PhoneNumber bigint, Address varchar(50), Department varchar(30);
+
+select * from EmpPayRoll;
+
+   Alter table EmpPayRoll  Add Pay decimal(10), Deduction decimal(10), TaxablePay decimal(10), IncomeTax decimal(10), NetPay decimal(10) ;
+
+  Update EmpPayRoll Set PhoneNumber='9187248525', Address='Delhi', Department='Sales' ,Pay=200, Deduction=650, TaxablePay=400, IncomeTax=900, NetPay=2150 where Id=2;
+
+  
+
+  Insert into EmpPayRoll(Name,Salary,SatrtDate,PhoneNumber,Address,Deduction,TaxablePay,NetPay,Gender) Values
+('Terisa',35000,'2018.jun.10','7875278951','bhilai',1000,2000,18000,'F');
+
+select * from EmpPayRoll;
