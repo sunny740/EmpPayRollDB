@@ -56,3 +56,14 @@ select * from EmpPayRoll;
 ('Terisa',35000,'2018.jun.10','7875278951','bhilai',1000,2000,18000,'F');
 
 select * from EmpPayRoll;
+
+create table Departmenttable
+(
+Id int,
+Department varchar (20)
+constraint Departmenttable_foreign_Key_ID foreign key(ID) references Emppayroll(ID) on delete cascade
+
+);
+Insert into Departmenttable select ID, Department from EmpPayRoll; 
+
+select * from Departmenttable;
