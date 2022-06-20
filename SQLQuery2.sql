@@ -15,3 +15,7 @@ insert into EmpPayRoll values('bhuppi',16500,'2013.MAY.15')
 insert into EmpPayRoll values('rajesh',17000,'2014.FEB.22')
 
 select * from EmpPayRoll
+
+select Salary from EmpPayRoll where Name='Jay';
+
+select SatrtDate from EmpPayRoll WHERE (SatrtDate BETWEEN '2019-04-22' AND GETDATE());
